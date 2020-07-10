@@ -1,0 +1,131 @@
+html {
+
+
+      }
+
+
+
+body {
+
+      font-family: 'Merriweather', sans-serif;
+      font-size: 1.1em;
+      line-height: 1;
+      color: #474342;
+      background-color: #F5F1E8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+
+    }
+
+header   {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+
+
+          }
+
+img {
+  max-height: 100px;
+  border-radius: 4px;
+}
+
+h1, h2, h3 {font-family: 'Bitter', serif;}
+
+h1 {font-size:1.5em;}
+
+h2 {font-size: 1.3em;
+  margin-bottom: 10%;
+margin-top: 5%;}
+
+
+
+main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      }
+
+#not_map  {
+                        margin-top: 5%;
+                        margin-bottom: 5%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        }
+
+#map {
+
+  height: 60%;
+  width: 80%;
+
+}
+/*
+img {width: 40%;
+    height:40%;
+      } */
+
+a {
+
+  color: #2c303e;
+}
+
+#map a {font-size: 1.5em;}
+
+
+a:visited {
+  color: #201e1e;
+}
+
+
+
+
+
+
+@media all and (min-width: 700px) {
+
+body {
+  /* background-color: yellow; */
+  font-size: 1.2em;
+}
+
+
+
+}
+
+
+@media all and (min-width: 1000px) {
+
+body {
+  /* background-color: pink; */
+  font-size: 1.4em;
+}
+
+h1 { font-size: 2.5em;}
+h2 { font-size: 2em;}
+nav { font-size: 1.3em;}
+
+article .poem_and_picture {
+                          display: flex;
+                          flex-direction: row;
+                          justify-content: center;
+
+                          /* width:76%; */
+                        }
+
+
+.poem-picture {
+                display: block;
+                border-radius: 3px;
+
+                border:1px solid #474342;;
+                margin-left: 50px;
+
+              }
+
+
+}

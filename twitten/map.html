@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <!-- <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style> -->
+
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>
+        #map_1a09e40f3f6d4ebe9c54d7bcc643ba7e {
+            /* position: relative; */
+            width: 100.0%;
+            height: 80.0%;
+            /* left: 0.0%; */
+            /* top: 20.0%; */
+        }
+    </style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="map-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Bitter" rel="stylesheet">
+
+</head>
+<body>
+  <div id="not_map">
+    <header>
+          <h1>Twitten</h1>
+          <div class="byline">
+            <address class="author">
+              by <a rel="author" href="https://twitter.com/archelina">Rachel Playforth</a>
+            </address>
+          </div>
+    </header>
+    <nav>
+      <ul>
+
+        <li><a href="index.html">Poems</a></li>
+
+        <li><a href="pictures.html">Pictures</a></li>
+      </ul>
+      <!-- <a href="index.html">Return to home page</a> -->
+    </nav>
+  </div>
+            <section id="map">
+            <div class="folium-map" id="map_1a09e40f3f6d4ebe9c54d7bcc643ba7e" ></div>
+            </section>
+</body>
+<script>
+
+            var map_1a09e40f3f6d4ebe9c54d7bcc643ba7e = L.map(
+                "map_1a09e40f3f6d4ebe9c54d7bcc643ba7e",
+                {
+                    center: [50.872155, 0.010217],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15.4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+
+
+
+
+            var tile_layer_d54b05be4e1f4ff29e161b11ddc82224 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1a09e40f3f6d4ebe9c54d7bcc643ba7e);
+
+
+<!--  Keere Street  -->
+
+            var marker_55aec48ca7be471b959e34470ac4fbbb = L.marker(
+                [50.871092, 0.006581],
+                {}
+            ).addTo(map_1a09e40f3f6d4ebe9c54d7bcc643ba7e);
+
+
+        var popup_a28bd49e4d3941e3acc20c3299ef3606 = L.popup({"maxWidth": "100%"});
+
+
+            var html_997576fcb6f2479b96279214a8158742 = $(`<div id="html_997576fcb6f2479b96279214a8158742" style="width: 100.0%; height: 100.0%;"><a href='index.html#keere' target='_blank'>Keere Street</a><a href="pictures.html#keere"><img class="poem-picture" src="images/keere.png" alt="A view down Keere Street"></a></div>`)[0];
+            popup_a28bd49e4d3941e3acc20c3299ef3606.setContent(html_997576fcb6f2479b96279214a8158742);
+
+
+        marker_55aec48ca7be471b959e34470ac4fbbb.bindPopup(popup_a28bd49e4d3941e3acc20c3299ef3606)
+        ;
+
+
+
+
+            marker_55aec48ca7be471b959e34470ac4fbbb.bindTooltip(
+                `<div>
+                     Keere Street
+
+                 </div>`,
+                {"sticky": true}
+            );
+
+
+<!--  Bull / Paine  -->
+
+            var marker_2beee0109acb432b9a0c06f795ed0d7b = L.marker(
+                [50.871613, 0.007461],
+                {}
+            ).addTo(map_1a09e40f3f6d4ebe9c54d7bcc643ba7e);
+
+
+        var popup_fe99709164984e2ab7c46f04cd9f7e83 = L.popup({"maxWidth": "100%"});
+
+
+            var html_b4068b5266e1462f84f9bbdbb1435771 = $(`<div id="html_b4068b5266e1462f84f9bbdbb1435771" style="width: 100.0%; height: 100.0%;"><a href='index.html#bull' target='_blank'>Bull Lane - Paine’s Twitten</a><a href="pictures.html#paine"><img class="poem-picture" src="images/paine.png" alt="A view down Paine's Twitten"></a></div>`)[0];
+            popup_fe99709164984e2ab7c46f04cd9f7e83.setContent(html_b4068b5266e1462f84f9bbdbb1435771);
+
+
+        marker_2beee0109acb432b9a0c06f795ed0d7b.bindPopup(popup_fe99709164984e2ab7c46f04cd9f7e83)
+        ;
+
+
+
+
+            marker_2beee0109acb432b9a0c06f795ed0d7b.bindTooltip(
+                `<div>
+                     Bull Lane-Paine's Twitten
+                 </div>`,
+                {"sticky": true}
+            );
+
+
+<!--  St Swithuns  -->
+
+            var marker_9164461d9111493d9b40a9e34989c7fc = L.marker(
+                [50.872087, 0.007944],
+                {}
+            ).addTo(map_1a09e40f3f6d4ebe9c54d7bcc643ba7e);
+
+
+        var popup_b4e2b9aa4e1d49d7bdfac06fda3d8e45 = L.popup({"maxWidth": "100%"});
+
+
+            var html_eb48eb84f3e5497a957950ad59960119 = $(`<div id="html_eb48eb84f3e5497a957950ad59960119" style="width: 100.0%; height: 100.0%;"><a href='index.html#stswithuns' target='_blank'>St Swithun’s Lane - St Swithun’s Terrace</a><a href="pictures.html#stswithuns"><img class="poem-picture" src="images/stswithuns.png" alt="A view down St Swithun’s Lane"></a></div>`)[0];
+            popup_b4e2b9aa4e1d49d7bdfac06fda3d8e45.setContent(html_eb48eb84f3e5497a957950ad59960119);
+
+
+        marker_9164461d9111493d9b40a9e34989c7fc.bindPopup(popup_b4e2b9aa4e1d49d7bdfac06fda3d8e45)
+        ;
+
+
+
+
+            marker_9164461d9111493d9b40a9e34989c7fc.bindTooltip(
+                `<div>
+                     St Swithuns Lane/Terrace
+                 </div>`,
+                {"sticky": true}
+            );
+
+
+<!--  Green Lane  -->
+
+            var marker_18ba0cae3f494bbca93818995d83625f = L.marker(
+                [50.871505, 0.008395],
+                {}
+            ).addTo(map_1a09e40f3f6d4ebe9c54d7bcc643ba7e);
+
+
+        var popup_2184238162db449faaefdc0593ff8621 = L.popup({"maxWidth": "100%"});
+
+
+            var html_e2a4f68352f14013b4bb8b22478f140d = $(`<div id="html_e2a4f68352f14013b4bb8b22478f140d" style="width: 100.0%; height: 100.0%;"><a href='index.html#green' target='_blank'>Green Lane</a><a href="pictures.html#green"><img class="poem-picture" src="images/green.png" alt="A view down Green Lane"></a></div>`)[0];
+            popup_2184238162db449faaefdc0593ff8621.setContent(html_e2a4f68352f14013b4bb8b22478f140d);
+
+
+        marker_18ba0cae3f494bbca93818995d83625f.bindPopup(popup_2184238162db449faaefdc0593ff8621)
+        ;
+
+
+
+
+            marker_18ba0cae3f494bbca93818995d83625f.bindTooltip(
+                `<div>
+                     Green Lane
+                 </div>`,
+                {"sticky": true}
+            );
+
+<!--  St Martins  -->
+
+            var marker_04dd4acd1c67456090ee4669e7b695d5 = L.marker(
+                [50.871942, 0.008652],
+                {}
+            ).addTo(map_1a09e40f3f6d4ebe9c54d7bcc643ba7e);
+
+
+        var popup_d93e183c60794a8780b7c1d2b8b5ab80 = L.popup({"maxWidth": "100%"});
+
+
+            var html_e1e26548a0b548ed9c064b95890244d8 = $(`<div id="html_e1e26548a0b548ed9c064b95890244d8" style="width: 100.0%; height: 100.0%;"><a href='index.html#stmartins' target='_blank'>St Martins Lane</a><a href="pictures.html#stmartins"><img class="poem-picture" src="images/stmartins.png" alt="A view down St Martins Lane"></a></div>`)[0];
+            popup_d93e183c60794a8780b7c1d2b8b5ab80.setContent(html_e1e26548a0b548ed9c064b95890244d8);
+
+
+        marker_04dd4acd1c67456090ee4669e7b695d5.bindPopup(popup_d93e183c60794a8780b7c1d2b8b5ab80)
+        ;
+
+
+
+
+            marker_04dd4acd1c67456090ee4669e7b695d5.bindTooltip(
+                `<div>
+                     St Martins Lane
+                 </div>`,
+                {"sticky": true}
+            );
+
+<!--  Watergate  -->
+
+            var marker_93786915098747a8b7677db4f34a71b1 = L.marker(
+                [50.871576, 0.009591],
+                {}
+            ).addTo(map_1a09e40f3f6d4ebe9c54d7bcc643ba7e);
+
+
+        var popup_257451e7f30b4a3697087dec7726d757 = L.popup({"maxWidth": "100%"});
+
+
+            var html_cf009b5f7f55447fba0b74a907a72598 = $(`<div id="html_cf009b5f7f55447fba0b74a907a72598" style="width: 100.0%; height: 100.0%;"><a href='index.html#watergate' target='_blank'>Watergate</a><a href="pictures.html#watergate"><img class="poem-picture" src="images/watergate.png" alt="A view down Watergate"></a></div>`)[0];
+            popup_257451e7f30b4a3697087dec7726d757.setContent(html_cf009b5f7f55447fba0b74a907a72598);
+
+
+        marker_93786915098747a8b7677db4f34a71b1.bindPopup(popup_257451e7f30b4a3697087dec7726d757)
+        ;
+
+
+
+
+            marker_93786915098747a8b7677db4f34a71b1.bindTooltip(
+                `<div>
+                     Watergate Lane
+                 </div>`,
+                {"sticky": true}
+            );
+
+<!--  St Andrews  -->
+
+            var marker_e407ecf2d68d4e90a33007e3ad6bad96 = L.marker(
+                [50.872392, 0.009999],
+                {}
+            ).addTo(map_1a09e40f3f6d4ebe9c54d7bcc643ba7e);
+
+
+        var popup_4a4d882b33da4dfd84c0735bab6de872 = L.popup({"maxWidth": "100%"});
+
+
+            var html_bd2b508330c34d1ba5cdfb2a6b88be04 = $(`<div id="html_bd2b508330c34d1ba5cdfb2a6b88be04" style="width: 100.0%; height: 100.0%;"><a href='index.html#standrews' target='_blank'>St Andrew’s Lane</a><a href="pictures.html#standrews"><img class="poem-picture" src="images/standrews.png" alt="A view down St Andrew’s Lane"></a></div>`)[0];
+            popup_4a4d882b33da4dfd84c0735bab6de872.setContent(html_bd2b508330c34d1ba5cdfb2a6b88be04);
+
+
+        marker_e407ecf2d68d4e90a33007e3ad6bad96.bindPopup(popup_4a4d882b33da4dfd84c0735bab6de872)
+        ;
+
+
+
+
+            marker_e407ecf2d68d4e90a33007e3ad6bad96.bindTooltip(
+                `<div>
+                     St Andrews Lane
+                 </div>`,
+                {"sticky": true}
+            );
+
+<!--  Station St  -->
+
+            var marker_10cf308ca00f4a86becb757a5b3d55d3 = L.marker(
+                [50.872152, 0.011233],
+                {}
+            ).addTo(map_1a09e40f3f6d4ebe9c54d7bcc643ba7e);
+
+
+        var popup_dd96c26b0e464af3a62fb6d7eacd1729 = L.popup({"maxWidth": "100%"});
+
+
+            var html_0590d788b19e43b687a2349d9c739779 = $(`<div id="html_0590d788b19e43b687a2349d9c739779" style="width: 100.0%; height: 100.0%;"><a href='index.html#station' target='_blank'>Station Street / St Mary’s Lane</a><a href="pictures.html#station"><img class="poem-picture" src="images/station.png" alt="A view down Station Street"></a></div>`)[0];
+            popup_dd96c26b0e464af3a62fb6d7eacd1729.setContent(html_0590d788b19e43b687a2349d9c739779);
+
+
+        marker_10cf308ca00f4a86becb757a5b3d55d3.bindPopup(popup_dd96c26b0e464af3a62fb6d7eacd1729)
+        ;
+
+
+
+
+            marker_10cf308ca00f4a86becb757a5b3d55d3.bindTooltip(
+                `<div>
+                     Station Street
+                 </div>`,
+                {"sticky": true}
+            );
+
+<!--   St Nicholas -->
+
+            var marker_73f2095e95054f0c8d4124cd4236f613 = L.marker(
+                [50.872071, 0.01207],
+                {}
+            ).addTo(map_1a09e40f3f6d4ebe9c54d7bcc643ba7e);
+
+
+        var popup_6c325097623045bba49d501cd2914b6d = L.popup({"maxWidth": "100%"});
+
+
+            var html_3806a9cc530d470799a66d57f44add05 = $(`<div id="html_3806a9cc530d470799a66d57f44add05" style="width: 100.0%; height: 100.0%;"><a href='index.html#stnicholas' target='_blank'>St Nicholas Lane</a><a href="pictures.html#stnicholas"><img class="poem-picture" src="images/stnicholas.png" alt="A view down St Nicholas Lane"></a></div>`)[0];
+            popup_6c325097623045bba49d501cd2914b6d.setContent(html_3806a9cc530d470799a66d57f44add05);
+
+
+        marker_73f2095e95054f0c8d4124cd4236f613.bindPopup(popup_6c325097623045bba49d501cd2914b6d)
+        ;
+
+
+
+
+            marker_73f2095e95054f0c8d4124cd4236f613.bindTooltip(
+                `<div>
+                     St Nicholas Lane
+                 </div>`,
+                {"sticky": true}
+            );
+
+<!--  Walwers  -->
+            var marker_ddc3a9ce362e411ebc440b8e8da162d7 = L.marker(
+                [50.872758, 0.011813],
+                {}
+            ).addTo(map_1a09e40f3f6d4ebe9c54d7bcc643ba7e);
+
+
+        var popup_ed5e93c2438a483b9f29f5e8f75ebbfd = L.popup({"maxWidth": "100%"});
+
+
+            var html_ea88792aef934128b6fae5c7568ac77b = $(`<div id="html_ea88792aef934128b6fae5c7568ac77b" style="width: 100.0%; height: 100.0%;"><a href='index.html#walwers' target='_blank'>Walwers Lane</a><a href="pictures.html#walwers"><img class="poem-picture" src="images/walwers.png" alt="A view down Walwers Lane"></a></div>`)[0];
+            popup_ed5e93c2438a483b9f29f5e8f75ebbfd.setContent(html_ea88792aef934128b6fae5c7568ac77b);
+
+
+        marker_ddc3a9ce362e411ebc440b8e8da162d7.bindPopup(popup_ed5e93c2438a483b9f29f5e8f75ebbfd)
+        ;
+
+
+
+
+            marker_ddc3a9ce362e411ebc440b8e8da162d7.bindTooltip(
+                `<div>
+                     Walwers Lane
+                 </div>`,
+                {"sticky": true}
+            );
+
+<!--  Church Twitten  -->
+
+            var marker_d17d2f9cfd1d49b297c37b96dc8e54ce = L.marker(
+                [50.87246, 0.012945],
+                {}
+            ).addTo(map_1a09e40f3f6d4ebe9c54d7bcc643ba7e);
+
+
+        var popup_fcea6a69eba04eef83e99f26d3f4e220 = L.popup({"maxWidth": "100%"});
+
+
+            var html_6b27590ad9e04a19862774d6cfb36773 = $(`<div id="html_6b27590ad9e04a19862774d6cfb36773" style="width: 100.0%; height: 100.0%;"><a href='index.html#church' target='_blank'>Church Twitten</a><a href="pictures.html#church"><img class="poem-picture" src="images/church.png" alt="A view down Church Twitten"></a></div>`)[0];
+            popup_fcea6a69eba04eef83e99f26d3f4e220.setContent(html_6b27590ad9e04a19862774d6cfb36773);
+
+
+        marker_d17d2f9cfd1d49b297c37b96dc8e54ce.bindPopup(popup_fcea6a69eba04eef83e99f26d3f4e220)
+        ;
+
+
+
+
+            marker_d17d2f9cfd1d49b297c37b96dc8e54ce.bindTooltip(
+                `<div>
+                     Church Twitten
+                 </div>`,
+                {"sticky": true}
+            );
+
+<!--  Broomans  -->
+            var marker_c58883c8024c422bb7717e0857b5251f = L.marker(
+                [50.87308, 0.014141],
+                {}
+            ).addTo(map_1a09e40f3f6d4ebe9c54d7bcc643ba7e);
+
+
+        var popup_2bce7af1b0774b169ef532fcafd6cf3c = L.popup({"maxWidth": "100%"});
+
+
+            var html_11bafc9bb18545eaa1c5ea52c4fdfeb9 = $(`<div id="html_11bafc9bb18545eaa1c5ea52c4fdfeb9" style="width: 100.0%; height: 100.0%;"><a href='index.html#broomans' target='_blank'>Broomans Lane</a><a href="pictures.html#broomans"><img class="poem-picture" src="images/broomans.png" alt="A view down Broomans Lane"></a></div>`)[0];
+            popup_2bce7af1b0774b169ef532fcafd6cf3c.setContent(html_11bafc9bb18545eaa1c5ea52c4fdfeb9);
+
+
+        marker_c58883c8024c422bb7717e0857b5251f.bindPopup(popup_2bce7af1b0774b169ef532fcafd6cf3c)
+        ;
+
+
+
+
+            marker_c58883c8024c422bb7717e0857b5251f.bindTooltip(
+                `<div>
+                     Broomans Lane
+                 </div>`,
+                {"sticky": true}
+            );
+
+</script>

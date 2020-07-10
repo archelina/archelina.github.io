@@ -1,0 +1,210 @@
+
+
+
+
+
+html {width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background-color: #F5F1E8;
+      color: #474342;
+      }
+
+body {
+      width: 100%;
+      height:100%;
+      font-family: 'Merriweather', sans-serif;
+      font-size: 1.1em;
+      line-height: 1.5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+
+
+      }
+
+h1, h2, h3 {font-family: 'Bitter', serif;}
+
+h1 {font-size:1.5em;}
+
+h2 {font-size: 1.3em;
+  margin-bottom: 10%;}
+
+  a {
+
+    color: #2c303e;
+  }
+
+  a:visited {
+    color: #201e1e;
+  }
+
+
+nav {
+        line-height: 1.7;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+      }
+
+main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      }
+
+
+header  {
+          margin-top: 5%;
+          margin-bottom: 5%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          }
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: white; */
+
+}
+
+figcaption {
+  padding-top: 10px;
+  padding-bottom: 25px;
+
+}
+
+
+#titles {
+
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              padding-bottom: 10px;
+              margin-bottom: 5px;
+              }
+
+
+
+
+/* [LIGHTBOX BACKGROUND] */
+#lb-back {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  transition: all ease 0.4s;
+}
+
+#lb-back.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* [LIGHTBOX IMAGE] */
+
+#lb-img {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+
+}
+
+#lb-img img {
+
+  width: 50%;
+  height: auto;
+
+
+}
+
+img {
+
+  width: 300px;
+  height: auto;
+  cursor: pointer;
+  border-radius: 20px;
+  border-color: #201e1e;
+  border-style: solid;
+  border-width: thin;
+}
+
+#pictures {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (orientation: landscape) {
+
+
+  /* [LIGHTBOX BACKGROUND] */
+
+  #lb-back {
+    position: fixed;
+
+    top: 45%;
+    left: -25%;
+
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    visibility: hidden;
+    opacity: 0;
+    transition: all ease 0.4s;
+  }
+  #lb-back.show {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  /* [LIGHTBOX IMAGE] */
+  #lb-img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+
+  }
+  #lb-img img {
+    position: relative;
+        top: 50%;
+        left: 25%;
+        transform: translateY(-50%);
+        text-align: center;
+        max-width: 50%;
+    }
+  }
+
+
+
+
+}

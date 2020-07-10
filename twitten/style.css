@@ -1,0 +1,183 @@
+html {
+
+
+      }
+
+
+
+body {
+
+      font-family: 'Merriweather', sans-serif;
+      font-size: 1.1em;
+      line-height: 1;
+      color: #474342;
+      background-color: #F5F1E8;
+
+
+    }
+
+
+h1, h2, h3 {font-family: 'Bitter', serif;}
+
+h1 {font-size:1.5em;}
+
+h2 {font-size: 1.3em;
+  margin-bottom: 10%;
+margin-top: 5%;}
+
+#front_page {
+              min-height: 100vh;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              /* background-color: #F5F1E8; */
+              }
+
+  header  {
+                        margin-top: 5%;
+                        margin-bottom: 5%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        }
+nav {
+        line-height: 1.7;
+
+      }
+main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      }
+
+img {width: 40%;
+    height:40%;
+      }
+
+a {
+
+  color: #2c303e;
+}
+
+a:visited {
+  color: #201e1e;
+}
+
+
+
+article {
+            min-height: 100vh;
+            max-width:94%;
+            padding-top: 50px;
+            margin:7%;
+            padding:7%;
+            /* background-color: #F5F1E8; */
+            border-radius: 3px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          }
+.poem {
+
+}
+
+.poem-picture{
+              display: none;
+              }
+
+aside { font-size: 1em;
+        font-style: italic;
+        padding-top: 30px;
+        padding-left: 15px;
+        line-height: 1.6;
+      }
+
+#quote {
+
+        font-size: 1em;
+        line-height: 1.6;
+        margin-left: 10px;
+        margin-right: 10px;
+}
+
+.picture_credit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    }
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    }
+
+#quote_and_poem {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.poem em {
+  font-size: 1em;
+
+
+}
+
+.poem #align_right {
+  padding-left: 30px;
+
+}
+.poem .stanza {
+  padding-bottom: 40px;
+}
+
+
+
+
+@media all and (min-width: 700px) {
+
+body {
+  /* background-color: yellow; */
+  font-size: 1.2em;
+}
+
+
+
+}
+
+
+@media all and (min-width: 1000px) {
+
+body {
+  /* background-color: pink; */
+  font-size: 1.4em;
+}
+
+h1 { font-size: 2.5em;}
+h2 { font-size: 2em;}
+nav { font-size: 1.3em;}
+
+article .poem_and_picture {
+                          display: flex;
+                          flex-direction: row;
+                          justify-content: center;
+
+                          /* width:76%; */
+                        }
+
+
+.poem-picture {
+                display: block;
+                border-radius: 3px;
+
+                border:1px solid #474342;;
+                margin-left: 50px;
+
+              }
+
+
+}

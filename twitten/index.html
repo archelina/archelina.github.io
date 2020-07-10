@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+
+<!-- TWITTENS by Rachel Playforth -->
+
+<!-- pictures by Emma Chaplin -->
+<!-- Design by Matt Holland -->
+
+
+
+
+  <head>
+
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+      <!-- MAP STUFF -->
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+        <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+
+      <!-- MAP STUFF /end -->
+
+        <link href="https://fonts.googleapis.com/css?family=Merriweather|Bitter" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+
+      <div id="front_page">
+        <header>
+
+              <h1>Twitten</h1>
+
+              <div class="byline">
+                <address class="author">
+                  by <a rel="author" href="https://twitter.com/archelina">Rachel Playforth</a>
+                </address>
+              </div>
+
+        </header>
+
+        <nav>
+
+        <ul>
+
+          <li><a href="map.html">Map</a></li>
+
+          <li><a href="pictures.html">Pictures</a></li>
+
+          <li><a href="#keere">Poems</a>
+            <ol type="i">
+            <!-- roman lowercase -->
+
+              <!-- links point to landmarks further down the page -->
+              <li><a href="#keere">Keere Street / Scare Hill</a></li>
+              <li><a href="#bull">Bull Lane - Paine’s Twitten</a></li>
+              <li><a href="#stswithuns">St Swithun’s Lane - St Swithun’s Terrace</a></li>
+              <li><a href="#green">Green Lane</a></li>
+              <li><a href="#stmartins">St Martins Lane</a></li>
+              <li><a href="#watergate">Watergate Lane</a></li>
+              <li><a href="#standrews">St Andrew’s Lane</a></li>
+              <li><a href="#station">Station Street / St Mary’s Lane</a></li>
+              <li><a href="#stnicholas">St Nicholas Lane</a></li>
+              <li><a href="#walwers">Walwers Lane</a></li>
+              <li><a href="#church">Church Twitten</a></li>
+              <li><a href="#broomans">Broomans Lane</a></li>
+            </ol>
+
+        </ul>
+
+      </nav>
+    </div>
+    <section>
+
+<!-- Keere Street -->
+
+      <article>
+        <h2><a id="keere" href="pictures.html#keere">Keere Street / Scare Hill</a></h2>
+        <div class="poem_and_picture">
+          <div class="poem">
+            <div class="stanza">
+              <p>Clamour of cobble</p>
+              <p>rough river</p>
+              <p>bursting banks.</p>
+            </div>
+            <div class="stanza">
+              <p>Each stone claims space</p>
+              <p>angle and push</p>
+              <p>rising proud.</p>
+            </div>
+            <div class="stanza">
+              <p>Jumbled tumble</p>
+              <p>slippered in moss</p>
+              <p>polished with rain.</p>
+            </div>
+            <div class="stanza">
+              <p>Stopped short</p>
+              <p>by crux of brick</p>
+              <p>we do not fall.</p>
+            </div>
+          </div>
+          <img class="poem-picture" src="images/keere.png" alt="A view down Keere Street">
+        </div>
+      </article>
+
+<!-- Bull Lane -->
+
+      <article id="bull" >
+          <h2><a href="pictures.html#bull">Bull Lane - Paine’s Twitten</a></h2>
+            <div class="poem_and_picture">
+              <div class="poem">
+                <p>Flint tunnel</p>
+                <p>rip in time</p>
+                <p>narrow slip</p>
+                <p>between high walls</p>
+                <p>past gates</p>
+                <p>we can’t open</p>
+                <p>warped wood</p>
+                <p>blind locks</p>
+                <p>then</p>
+                <p>as we lose our breath</p>
+                <p>a keystone</p>
+                <p>yields to the touch.</p>
+              </div>
+              <img class="poem-picture" src="images/bull.png" alt="A view down Paine's Twitten">
+            </div>
+      </article>
+
+<!-- St Swithuns -->
+
+      <article>
+        <h2><a id="stswithuns" href="pictures.html#stswithuns">St Swithun’s Lane - St Swithun’s Terrace</a></h2>
+          <div class="poem_and_picture">
+            <div class="poem">
+
+              <div class="stanza">
+                <p>Swithun’s last words</p>
+                <p>rise up like mist</p>
+                <p>his final request:</p>
+              </div>
+
+              <div class="stanza">
+                  <p><em>no shrine, no walls</em></p>
+                  <p><em>between my remains</em></p>
+                  <p><em>and my parishioners</em></p>
+                  <p><em>no barrier to the sweet damp air</em></p>
+                  <p><em>to heaven’s rainfall</em></p>
+                  <p><em>green on my grave.</em></p>
+              </div>
+
+              <div class="stanza">
+                <p>For a century they walked close by -</p>
+                <p>blistered and poor</p>
+                <p>tired or praying</p>
+                <p>stopping a moment</p>
+                <p>among the trees</p>
+                <p>boots thick with loam -</p>
+                <p>then bricks went up</p>
+                <p>to honour his tomb.</p>
+              </div>
+
+              <div class="stanza">
+                <p>Today the road shines dark</p>
+                <p>with summer rain</p>
+                <p>buildings keep rising</p>
+                <p>the layers thicken</p>
+                <p>for forty days</p>
+                <p>the skies are stone.</p>
+              </div>
+
+            </div>
+            <img class="poem-picture" src="images/stswithuns.png" alt="A view down St Swithuns Twitten">
+          </div>
+        </article>
+
+<!-- Green Lane -->
+
+        <article>
+          <h2><a id="green" href="pictures.html#green">Green Lane</a></h2>
+          <div class="poem_and_picture">
+            <div class="poem">
+
+              <div class="stanza">
+                <p>Shadowed underfoot</p>
+                <p>damp rising</p>
+                <p>you’ve pushed</p>
+                <p>what wants to grow</p>
+                <p>to the vertical.</p>
+              </div>
+
+              <div class="stanza">
+                <p>Toadflax and bramble</p>
+                <p>crawl up doors</p>
+                <p>nose through brick</p>
+                <p>pear trees stretch fingertips</p>
+                <p>over walls.</p>
+              </div>
+
+            </div>
+            <img class="poem-picture" src="images/green.png" alt="A view down Green Lane">
+          </div>
+        </article>
+
+<!-- St Martins -->
+
+        <article>
+          <h2><a id="stmartins" href="pictures.html#stmartins">St Martins Lane</a></h2>
+            <div class="poem_and_picture">
+              <div class="poem">
+                <p>unbox the houses</p>
+                <p>tilt the roof</p>
+                <p>rich cream wall</p>
+                <p>peel back timber frame</p>
+                <p>orange squares</p>
+                <p>lift the pink siding</p>
+                <p>of the chocolate shop</p>
+                <p>slide out the slice</p>
+                <p>of tree</p>
+                <p>hill</p>
+                <p>sky</p>
+              </div>
+              <img class="poem-picture" src="images/stmartins.png" alt="A view down St Martins">
+            </div>
+        </article>
+
+<!-- Watergate -->
+
+        <article>
+          <h2><a id="watergate" href="pictures.html#watergate">Watergate Lane</a></h2>
+          <div class="poem_and_picture">
+            <div class="poem">
+              <p>Wide mouth</p>
+              <p>delta</p>
+              <p>open hand</p>
+              <p>empty bowl</p>
+              <p>we drink flowers</p>
+              <p>eat earth</p>
+              <p>gifts from stone.</p>
+            </div>
+            <img class="poem-picture" src="images/watergate.png" alt="A view down Watergate">
+          </div>
+        </article>
+
+<!-- St Andrews -->
+
+        <article>
+          <h2><a id="standrews" href="pictures.html#standrews">St Andrew’s Lane</a></h2>
+          <div class="poem_and_picture">
+            <div class="poem">
+
+              <div class="stanza">
+                <p>a garden is always a series of losses</p>
+                <p>a wall is safer</p>
+              </div>
+
+              <div class="stanza">
+                <p>a wall is better than a war</p>
+                <p>a garden is a friend</p>
+              </div>
+
+              <div class="stanza">
+                <p>a garden is the shape of a rectangle</p>
+                <p>a wall is just a wall</p>
+              </div>
+
+              <div class="stanza">
+                <p>a wall is a screen</p>
+                <p>a garden is never finished</p>
+              </div>
+
+              <aside>Note: the first line of this found poem<br>is taken from a line by May Sarton.</aside>
+
+            </div>
+            <img class="poem-picture" src="images/standrews.png" alt="A view down St Andrews Lane">
+          </div>
+        </article>
+
+<!-- Station Street -->
+
+        <article>
+          <h2><a id="station" href="pictures.html#station">Station Street / St Mary’s Lane</a></h2>
+            <div class="poem_and_picture">
+              <div class="poem">
+
+                <div class="stanza">
+                  <p>often overlooked</p>
+                  <p>predominantly of terraced housing</p>
+                  <p>a room may have been this colour in the past</p>
+                </div>
+
+
+                <div class="stanza">
+                  <p>every accommodation for visitors</p>
+                  <p>an atmospheric drinking den</p>
+                  <p>independent coffee house</p>
+                  <p>a mouse hole of a shop</p>
+                  <p>not organised in any discernible fashion</p>
+                </div>
+
+                <div class="stanza">
+                  <p>new stables, shops and carriage repository</p>
+                  <p>approved subject to drains being properly ventilated</p>
+                  <p>during repair work a void was discovered</p>
+                  <p>with this area being 91% white</p>
+                  <p>the spin machine will be back in action</p>
+                  <p>your sphere online</p>
+                </div>
+
+                <div class="stanza">
+                  <p>colour makes people happy</p>
+                  <p>the salt to hit your tongue</p>
+                  <p>eaten upside down to allow</p>
+                  <p>a mouthful of this and a mouthful of that</p>
+                  <p>nose to tail</p>
+                </div>
+
+                <div class="stanza">
+                  <p>a former Wesleyan chapel</p>
+                  <p>is on the market</p>
+                  <p>as well as a host of innovative workflow apps</p>
+                  <p>acoustics, noise, vibration</p>
+                  <p>dust and air quality</p>
+                  <p>Craven A will not affect your throat</p>
+                </div>
+
+                <div class="stanza">
+                  <p>click here to view 65 crimes</p>
+                  <p>while investigations and any necessary repairs</p>
+                  <p>are carried out to fill the void</p>
+                </div>
+
+              </div>
+              <img class="poem-picture" src="images/station.png" alt="A view down Station Street">
+            </div>
+          </article>
+
+<!-- St Nicholas -->
+
+          <article>
+            <h2><a id="stnicholas" href="pictures.html#stnicholas">St Nicholas Lane</a></h2>
+            <div class="poem_and_picture">
+              <div class="poem">
+                <div class="stanza">
+                  <p>A tree grew against the wall</p>
+                  <p>slow leaning</p>
+                  <p>trunk thickening.</p>
+                </div>
+
+                <div class="stanza">
+                  <p>The wall began to yield</p>
+                  <p>inch by inch</p>
+                  <p>it bowed and bellied</p>
+                  <p>the way stone shouldn’t.</p>
+                </div>
+
+                <div class="stanza">
+                  <p>The tree was felled</p>
+                  <p>but left its shape</p>
+                  <p>a negative</p>
+                  <p>impressed.</p>
+                </div>
+
+                <div class="stanza">
+                  <p>We give the wall space</p>
+                  <p>as it teeters</p>
+                  <p>swollen with secrets.</p>
+                </div>
+
+              </div>
+              <img class="poem-picture" src="images/stnicholas.png" alt="A view down St Nicholas Lane">
+            </div>
+          </article>
+
+<!--  Walwers  -->
+
+          <article>
+            <h2><a id="walwers" href="pictures.html#walwers">Walwers Lane</a></h2>
+            <div class="poem_and_picture">
+              <div class="poem">
+
+                <div class="stanza"
+                  <p>The argument might have raged for years</p>
+                  <p>since the flats were built around it</p>
+                  <p>layering anger into foundations</p>
+                  <p>making rooms for the pain.</p>
+                </div>
+
+                <div class="stanza"
+                  <p>Bystander, passer through -</p>
+                  <p>this twitten is made for overhearing -</p>
+                  <p>gaps in the wall</p>
+                  <p>like open wounds.</p>
+                </div>
+
+              </div>
+              <img class="poem-picture" src="images/walwers.png" alt="A view down Walwers Lane">
+            </div>
+          </article>
+
+
+<!--  Church Twitten  -->
+
+          <article>
+            <h2><a id="church" href="pictures.html#church">Church Twitten</a></h2>
+            <div class="poem_and_picture">
+              <div class="poem">
+
+                <div class="stanza" id="align_right">
+                  <p>the east wall is cobble</p>
+                  <p>gilded with lichen</p>
+                </div>
+
+
+                <div class="stanza">
+                  <p>the west wall is flint</p>
+                  <p>knapped jigsaw pieces</p>
+                </div>
+
+
+
+                <div class="stanza" id="align_right">
+                  <p>fig tree stretches</p>
+                  <p>teardrop fruit</p>
+                </div>
+
+
+                <div class="stanza">
+                  <p>low door creaks</p>
+                  <p>silvered wood</p>
+                </div>
+
+
+                <div class="stanza"id="align_right">
+                  <p>beech leaves rust</p>
+                  <p>join windfall mulch</p>
+                </div>
+
+
+                <div class="stanza">
+                  <p>horse chestnut leans in</p>
+                  <p>conkers split</p>
+                </div>
+
+
+                <div class="stanza"id="align_right">
+                  <p>fig tree creaks</p>
+                  <p>green parasol</p>
+                </div>
+
+
+                <div class="stanza">
+                  <p>low door rusts</p>
+                  <p>bramble ladder</p>
+                </div>
+
+
+                <div class="stanza"id="align_right">
+                  <p>the east wall is cobble</p>
+                  <p>gilded with lichen</p>
+                </div>
+
+                <div class="stanza">
+                  <p>the west wall is flint</p>
+                  <p>knapped jigsaw pieces</p>
+                </div>
+
+
+              </div>
+              <img class="poem-picture" src="images/church.png" alt="A view down Church Street">
+            </div>
+          </article>
+
+
+<!--  Broomans  -->
+
+          <article>
+            <h2><a id="broomans" href="pictures.html#broomans">Broomans Lane</a></h2>
+              <div class="poem_and_picture">
+                    <div class="poem" id="quote_and_poem">
+
+                      <div class="stanza" id="quote">
+                          <p><em>"It is not wet air, nor moist air, nor vapoury air; it is not vapour in any shape or form whatever. It is an immersion of the whole body in hot common air."</em></p>
+                          <p><em>- Johann Ludwig Wilhelm Thudichum (1861), on the Victorian Turkish bath</em></p>
+                      </div>
+
+                        <div class="stanza">
+                          <p>A tinderbox of breath</p>
+                          <p>a tender oven</p>
+                          <p>blood rising under skin</p>
+                          <p>throats red as roses.</p>
+                        </div>
+
+
+                      <div class="stanza">
+                        <p>You inhale</p>
+                        <p>your neighbour’s voice</p>
+                        <p>your sister’s sigh</p>
+                        <p>your lover’s secret</p>
+                      </div>
+
+                      <div class="stanza">
+                        <p>the hot common air.</p>
+                      </div>
+                    </div>
+                <img class="poem-picture" src="images/broomans.png" alt="A view down Broomans Street">
+              </div>
+            </article>
+
+    </section>
+  </main>
+
+
+  <footer id="about">
+
+    <h2>About</h2>
+    <div class="picture_credit">
+      <p>Pictures</p>
+      <address class="author">
+        <p>by <a rel="author" href="https://twitter.com/MsEmmaChaplin">Emma Chaplin</a></p>
+        <p>and <a rel="author" href="https://twitter.com/archelina">Rachel Playforth</a><p>
+      </address>
+    </div>
+    <div class="design_credit">
+      Web design
+      <address class="author">
+        by <a rel="author" href="https://wyrd.systems">Matt Holland</a>
+      </address>
+    </div>
+
+  </footer>
+</body>
